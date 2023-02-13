@@ -80,6 +80,14 @@
             transition: 1.5s;
           }
         }
+
+        span.hover-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 10px;
+          }
       }
     }
   }

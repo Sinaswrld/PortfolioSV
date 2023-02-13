@@ -50,7 +50,9 @@ const Logo = () => {
             <span style={{ '--i': 1 }}></span>
           </div>
           <div style={{ '--x': 1, '--y': 0 }}>
-            <span style={{ '--i': 3 }}></span>
+            <span className="hover-me" style={{ '--i': 3 }}>
+              Hover Me!
+            </span>
             <span style={{ '--i': 2 }}></span>
             <span style={{ '--i': 1 }}></span>
           </div>

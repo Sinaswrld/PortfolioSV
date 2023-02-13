@@ -9,9 +9,10 @@ import {
   faEnvelope,
   faHome,
   faUser,
-  faSuitcase,
+  faFile,
 } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import resume from '../../assets/Resume 2023.pdf'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
@@ -46,19 +47,20 @@ const Sidebar = () => {
             onClick={() => setShowNav(false)}
             exact="true"
             activeclassname="active"
-            className="portfolio-link"
-            to="/portfolio"
+            className="contact-link"
+            to="/contact"
           >
-            <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
           </NavLink>
           <NavLink
             onClick={() => setShowNav(false)}
             exact="true"
             activeclassname="active"
-            className="contact-link"
-            to="/contact"
+            className="resume-link"
+            to={resume}
+            target="_blank"
           >
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
           </NavLink>
           <FontAwesomeIcon
             icon={faClose}
