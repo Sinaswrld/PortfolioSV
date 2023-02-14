@@ -12,7 +12,7 @@ import {
   faFile,
 } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import resume from '../../assets/Resume 2023.pdf'
+import resume from '../../assets/sv-cv2A.pdf'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)

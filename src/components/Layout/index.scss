@@ -25,8 +25,7 @@
 }
 
 .about-page,
-.contact-page,
-.portfolio-page {
+.contact-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -88,8 +87,7 @@
         min-height: auto;
 
         &.about-page,
-        &.contact-page,
-        &.portfolio-page {
+        &.contact-page {
 
             .text-zone {
                 position: initial;
