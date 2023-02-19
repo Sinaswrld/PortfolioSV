@@ -83,16 +83,62 @@
 @media screen and (max-width: 1200px) {
   .stage-cube-cont {
     position: initial;
-    width: 100%!important;
-    padding-top: 18%;
     height: 0%;
-    width: auto;
+    width: 100%;
     overflow: visible;
+    padding-left: 5%;
+    padding-top: 5%;
   }
-}
-
-@media  screen and (max-width: 1200px){
+  
   h1 {
     margin-bottom: 0;
+  }
+
+  .cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 75px 75px 0;
+    margin-left: calc(50% - 100px);
+  
+    div {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border: 1px solid #ccc;
+      background: rgba(255, 255, 255, 0.4);
+      font-size: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 7.5px 0px lightyellow;
+    }
+  
+    .face1 {
+      transform: translateZ(75px);
+      color: #dd0031;
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(75px);
+      color: #f06529;
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(75px);
+      color: #28a4d9;
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(75px);
+      color: #5ed4f4;
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(75px);
+      color: #efd81d;
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(75px);
+      color: #ec4d28;
+    }
   }
 }
