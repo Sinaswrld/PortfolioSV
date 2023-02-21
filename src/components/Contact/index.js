@@ -26,7 +26,10 @@ const Contact = () => {
         '28SzXRU9fZyp1CQx0'
       )
       .then(
-        (result) => console.log(result.text),
+        (result) => {
+          console.log(result.text)
+          window.location.reload(true)
+        },
         (error) => console.log(error.text)
       )
   }
