@@ -91,11 +91,9 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Sina Vahidi,
+          Sina Vahidi
           <br />
-          Canada,
-          <br />
-          Newmarket, ON
+          Newmarket, ON, Canada
           <br />
           <span>s2vahidi@uwaterloo.ca</span>
           <br />
