@@ -62,7 +62,7 @@
                 content: 'HOME';
                 font-size: 8px;
                 font-weight: bold;
-                letter-spacing: 2px;
+                letter-spacing: 0.5px;
                 position: absolute;
                 bottom: 0;
                 display: block;
@@ -91,6 +91,12 @@
                 content: 'CONTACT';
             }
         }
+
+        a.projects-link {
+          &:after {
+              content: 'PROJECTS';
+          }
+      }
 
         a.resume-link {
             &:after {
