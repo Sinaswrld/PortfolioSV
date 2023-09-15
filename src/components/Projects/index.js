@@ -22,6 +22,7 @@ const Projects = () => {
               idx={15}
             />
           </h1>
+          <p>peepeepoopoo</p>
         </div>
       </div>
       <Loader type="pacman" />
