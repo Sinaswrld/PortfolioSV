@@ -10,7 +10,7 @@ import {
   faHome,
   faUser,
   faFile,
-  faSuitcase,
+  // faSuitcase,
 } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import resume from '../../assets/SV-CV2B.pdf'
@@ -53,7 +53,7 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
           </NavLink>
-          <NavLink
+          {/* <NavLink
             onClick={() => setShowNav(false)}
             exact="true"
             activeclassname="active"
@@ -62,7 +62,7 @@ const Sidebar = () => {
             target="_blank"
           >
             <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
-          </NavLink>
+          </NavLink> */}
           <NavLink
             onClick={() => setShowNav(false)}
             exact="true"
