@@ -19,7 +19,7 @@ const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
 
   return (
-    <div className="nav-bar">
+    <div className={showNav ? 'nav-bar mobile-show' : 'nav-bar'}>
       <Link className="logo" to="/">
         <img src={LogoS} alt="logo" />
       </Link>

@@ -4,6 +4,13 @@
     position: absolute;
 }
 
+.nav-bar.mobile-show + .page {
+  .about-page {
+    .stage-cube-cont {
+      display: none;
+    }
+  }
+}
 
 .tag-html {
     margin-left: -20px;
