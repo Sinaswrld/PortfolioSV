@@ -13,6 +13,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 
 const About = () => {
+  const HEADER = process.env.REACT_APP_ABOUT_H
+  const P1 = process.env.REACT_APP_ABOUT_P1
+  const P2 = process.env.REACT_APP_ABOUT_P2
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
@@ -27,23 +30,12 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'About me'.split('')}
+              strArray={HEADER.split('')}
               idx={15}
             />
           </h1>
-          <p>
-            As a highly motivated and enthusiastic software developer, I am
-            seeking an internship with a reputable IT company where I can grow
-            my skills and contribute to impactful projects.
-          </p>
-          <p align="LEFT">
-            I possess a strong work ethic, a natural thirst for knowledge, and a
-            drive to continuously improve through each project I undertake. My
-            confidence, combined with my passion for technology, makes me a
-            valuable asset to any team. I am excited to bring my unique
-            perspective and skills to a company that values creativity,
-            innovation, and growth.
-          </p>
+          <p>{P1}</p>
+          <p align="LEFT">{P2}</p>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">

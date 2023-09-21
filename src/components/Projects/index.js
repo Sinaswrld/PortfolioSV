@@ -5,7 +5,7 @@ import Loader from 'react-loaders'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-
+  const HEADER = process.env.REACT_APP_PROJECTS_H
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -18,7 +18,7 @@ const Projects = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'Projects'.split('')}
+              strArray={HEADER.split('')}
               idx={15}
             />
           </h1>

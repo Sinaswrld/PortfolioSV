@@ -7,9 +7,13 @@ import Logo from './Logo'
 import Loader from 'react-loaders'
 
 const Home = () => {
+  const JOB = process.env.REACT_APP_JOB_SD
+  const INA = process.env.REACT_APP_INA
+  const POSITIONS = process.env.REACT_APP_POSITIONS
+  const CONTACT = process.env.REACT_APP_CONTACT_ME
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = 'ina'.split('')
-  const jobArray = 'software developer'.split('')
+  const nameArray = INA.split('')
+  const jobArray = JOB.split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -40,9 +44,9 @@ const Home = () => {
               idx={27}
             />
           </h1>
-          <h2>Frontend Developer / Backend Developer / Creative Designer</h2>
+          <h2>{POSITIONS}</h2>
           <Link to="/contact" className="flat-button">
-            CONTACT ME
+            {CONTACT}
           </Link>
         </div>
         <Logo />

@@ -7,6 +7,15 @@ import emailjs from '@emailjs/browser'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 const Contact = () => {
+  const HEADER = process.env.REACT_APP_CONTACT_H
+  const P = process.env.REACT_APP_CONTACT_P
+  const NAME = process.env.REACT_APP_FULL_NAME
+  const ADDRESS = process.env.REACT_APP_ADDRESS
+  const EMAIL = process.env.REACT_APP_EMAIL
+  const PHONE = process.env.REACT_APP_PHONE_NUMBER
+  const MAP_URL = process.env.REACT_APP_CONTACT_MAP_URL
+  const POPUP = process.env.REACT_APP_CONTACT_POPUP
+
   const [letterClass, setLetterClass] = useState('text-animate')
   const refForm = useRef()
   useEffect(() => {
@@ -40,15 +49,11 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'Contact me'.split('')}
+              strArray={HEADER.split('')}
               idx={15}
             />
           </h1>
-          <p>
-            I am interested in co-op opportunities - especially ambitious or
-            large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me.
-          </p>
+          <p>{P}</p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
@@ -91,21 +96,19 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Sina Vahidi
+          {NAME}
           <br />
-          Newmarket, ON, Canada
+          {ADDRESS}
           <br />
-          <span>s2vahidi@uwaterloo.ca</span>
+          <span>{EMAIL}</span>
           <br />
-          <span>647-671-3324</span>
+          <span>{PHONE}</span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[44.0618657, -79.5010341]} zoom={5}>
-            <TileLayer
-              url={'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'}
-            />
+            <TileLayer url={MAP_URL} />
             <Marker position={[44.0618657, -79.5010341]}>
-              <Popup>I live around here, come over for a cup of coffee!</Popup>
+              <Popup>{POPUP}</Popup>
             </Marker>
           </MapContainer>
         </div>

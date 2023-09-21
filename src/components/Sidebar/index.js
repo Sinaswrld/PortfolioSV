@@ -17,7 +17,8 @@ import resume from '../../assets/SV-CV2B.pdf'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
-
+  const LINKED_IN_URL = process.env.REACT_APP_LINKED_IN_URL
+  const GITHUB_URL = process.env.REACT_APP_GITHUB_URL
   return (
     <div className={showNav ? 'nav-bar mobile-show' : 'nav-bar'}>
       <Link className="logo" to="/">
@@ -87,7 +88,7 @@ const Sidebar = () => {
               className="linkedin-link"
               target="_blank"
               rel="noreferrer"
-              href="https://www.linkedin.com/in/sina-vahidi"
+              href={LINKED_IN_URL}
             >
               <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
             </a>
@@ -97,7 +98,7 @@ const Sidebar = () => {
               className="github-link"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/Sinaswrld"
+              href={GITHUB_URL}
             >
               <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
             </a>
@@ -106,20 +107,12 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/sina-vahidi"
-          >
+          <a target="_blank" rel="noreferrer" href={LINKED_IN_URL}>
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
         </li>
         <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/Sinaswrld"
-          >
+          <a target="_blank" rel="noreferrer" href={GITHUB_URL}>
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>
