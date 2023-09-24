@@ -15,6 +15,8 @@ const Contact = () => {
   const PHONE = process.env.REACT_APP_PHONE_NUMBER
   const MAP_URL = process.env.REACT_APP_CONTACT_MAP_URL
   const POPUP = process.env.REACT_APP_CONTACT_POPUP
+  const LONG = process.env.REACT_APP_CONTACT_MAP_LONG
+  const LAT = process.env.REACT_APP_CONTACT_MAP_LAT
 
   const [letterClass, setLetterClass] = useState('text-animate')
   const refForm = useRef()
@@ -105,9 +107,9 @@ const Contact = () => {
           <span>{PHONE}</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[44.0618657, -79.5010341]} zoom={5}>
+          <MapContainer center={[LAT, LONG]} zoom={5}>
             <TileLayer url={MAP_URL} />
-            <Marker position={[44.0618657, -79.5010341]}>
+            <Marker position={[LAT, LONG]}>
               <Popup>{POPUP}</Popup>
             </Marker>
           </MapContainer>
