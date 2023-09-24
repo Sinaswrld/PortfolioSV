@@ -10,6 +10,7 @@
     "eject": "react-scripts eject"
   },
   "author": "",
+  "proxy": "http://localhost:3000",
   "license": "ISC",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -21,6 +22,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "animate.css": "^4.1.1",
+    "axios": "^1.5.0",
     "firebase": "^9.17.1",
     "gsap-trial": "^3.11.4",
     "leaflet": "^1.9.3",
