@@ -103,20 +103,32 @@
 
   a {
     padding: 0.5rem 1rem;
-    color: #fff;
-    font-size: 15px;
-    border: 1px solid #fff;
+    color: hsl(0deg, 0%, 10%);
+    font-weight: 500;
+    font-size: 13px;
     border-radius: 5px;
     margin-right: 5px;
     text-decoration: none;
     transition: all 0.3s;
     max-width: fit-content;
-    &:first-of-type:hover { 
-      color: #ffd700;
-      border-color: #ffd700;
+
+    &:first-of-type {
+      background-color: #1883bc;
+      border: 1px solid #1883bc;
+    }
+
+    &:last-of-type {
+      background-color: #ffd700;
+      border: 1px solid #ffd700;
     }
     &:last-of-type:hover { 
+      color: #ffd700;
+      background-color: transparent;
+      border-color: #ffd700;
+    }
+    &:first-of-type:hover { 
       color: #1883bc;
+      background-color:transparent ;
       border-color: #1883bc;
     }
   }

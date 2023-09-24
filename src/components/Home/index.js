@@ -11,6 +11,7 @@ const Home = () => {
   const INA = process.env.REACT_APP_INA
   const POSITIONS = process.env.REACT_APP_POSITIONS
   const CONTACT = process.env.REACT_APP_CONTACT_ME
+  const PROJECTS = process.env.REACT_APP_PROJECTS_CAP
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = INA.split('')
   const jobArray = JOB.split('')
@@ -45,9 +46,14 @@ const Home = () => {
             />
           </h1>
           <h2>{POSITIONS}</h2>
-          <Link to="/contact" className="flat-button">
-            {CONTACT}
-          </Link>
+          <div className="btn-wrapper">
+            <Link to="/projects" className="flat-button">
+              {PROJECTS}
+            </Link>
+            <Link to="/contact" className="flat-button">
+              {CONTACT}
+            </Link>
+          </div>
         </div>
         <Logo />
       </div>
