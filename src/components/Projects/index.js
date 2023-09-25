@@ -18,13 +18,13 @@ const Projects = () => {
       title: process.env.REACT_APP_P1_TITLE,
       desc: process.env.REACT_APP_P1_DESC,
       live: WEBURL,
-      code: TW_GITURL,
+      code: GG_GITURL,
     },
     {
       img: IMG2,
       title: process.env.REACT_APP_P2_TITLE,
       desc: process.env.REACT_APP_P2_DESC,
-      code: GG_GITURL,
+      code: TW_GITURL,
     },
   ]
   useEffect(() => {
