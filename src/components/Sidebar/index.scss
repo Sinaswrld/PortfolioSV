@@ -105,14 +105,20 @@
             }
         }
 
-        a.linkedin-link, a.github-link{
-          width: 40px;
-          display: block;
+        a.linkedin-link{
+          display: flex;
+          z-index: 99999;
             &:after {
                 content: '';
             }
         }
-
+        a.github-link {
+          display: flex;
+          z-index: 99999;
+            &:after {
+                content: '';
+            }
+        }
 
         a.active {
             svg {
