@@ -49,19 +49,19 @@ const Sidebar = () => {
             onClick={() => setShowNav(false)}
             exact="true"
             activeclassname="active"
-            className="contact-link"
-            to="/contact"
+            className="projects-link"
+            to="/projects"
           >
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
           </NavLink>
           <NavLink
             onClick={() => setShowNav(false)}
             exact="true"
             activeclassname="active"
-            className="projects-link"
-            to="/projects"
+            className="contact-link"
+            to="/contact"
           >
-            <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
           </NavLink>
           <NavLink
             onClick={() => setShowNav(false)}
