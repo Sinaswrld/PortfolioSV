@@ -3,7 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import Logo from './Logo'
+import Cubes from './Cubes'
 import Loader from 'react-loaders'
 
 const Home = () => {
@@ -55,7 +55,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <Logo />
+        <Cubes />
       </div>
       <Loader type="pacman" />
     </>

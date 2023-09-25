@@ -68,25 +68,37 @@
             transform: none;
             padding: 10px;
             box-sizing: border-box;
+            text-align: center;
         }
         
         h1 {
-            font-size: 43px;
-        }
+            font-size: 42px;
 
-        .flat-button {
-            float: left;
+            img {
+              margin-left: 10px;
+              margin-right: 2px;
+            }
+        }
+        .btn-wrapper {
+          justify-content: center;
+
+          .flat-button {
             display: block;
-            margin: 20px auto 0 auto;
+            margin: 20px 0 auto;
             width: 125px;
+            text-align: center;
+            float: unset;
+        }
         }
 
         h2 {
-          font-size: 7.5px;
+          font-size: 8px;
+          letter-spacing: 2px;
+          text-align: center;
         }
 
         .logo-container {
-            display: none
+           width: 97.5%;
         }
         
     }

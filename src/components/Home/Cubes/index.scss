@@ -93,3 +93,48 @@
 		filter: hue-rotate(360deg);
 	}
 }
+
+@media screen and (max-width: 1200px){
+  .logo-container {
+    justify-content: center;
+    width: 97%;
+    margin-top: 40%;
+  
+  
+    .cube-container {
+      .cube {
+        &:nth-child(2) {
+          translate: -45px -45px;
+        }
+  
+        &:nth-child(3) {
+          translate: 45px 45px;
+        }
+  
+        div {
+          gap: 30px;
+          translate: calc(-52.5px * var(--x)) calc(-45px * var(--y));
+  
+          span {
+            width: 37.5px;
+            height: 37.5px;
+  
+            &:hover {
+              filter: drop-shadow(0 0 50px #ef416c);
+            }
+  
+            &:before {
+              left: -30px;
+              width: 30px;
+            }
+  
+            &:after {
+              top: -30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
