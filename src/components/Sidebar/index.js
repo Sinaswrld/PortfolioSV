@@ -13,7 +13,7 @@ import {
   faSuitcase,
 } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import resume from '../../assets/SV-CV2B.pdf'
+import resume from '../../assets/SV-CV2BOCT.pdf'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
