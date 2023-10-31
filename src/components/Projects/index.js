@@ -2,8 +2,8 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import IMG1 from '/Users/sinavahidi/PortfolioGG/src/assets/images/CurrWeb.png'
-import IMG2 from '/Users/sinavahidi/PortfolioGG/src/assets/images/PrevWeb.png'
+import IMG1 from '/Users/sinavahidi/Desktop/PortfolioSV/src/assets/images/CurrWeb.png'
+import IMG2 from '/Users/sinavahidi/Desktop/PortfolioSV/src/assets/images/PrevWeb.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')

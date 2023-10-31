@@ -18,6 +18,10 @@
       position: relative;
       animation: fadeInUp 2s 2s;
       animation-fill-mode: forwards;
+
+      :focus-visible{
+        outline: none!important;
+      }
     }
 
     li.half {
@@ -73,7 +77,7 @@
   }
 
   .flat-button:hover {
-    color: #fff;
+    color: #172229;
     background: #ffd700;
     cursor: pointer;
   }
