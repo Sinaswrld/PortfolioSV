@@ -8,8 +8,8 @@ import IMG2 from '/Users/sinavahidi/Desktop/PortfolioSV/src/assets/images/PrevWe
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const HEADER = process.env.REACT_APP_PROJECTS_H
-  const WEBURL = process.env.REACT_APP_URL
   const GG_GITURL = process.env.REACT_APP_GGREPO_URL
+  const WEBURL = process.env.REACT_APP_URL
   const TW_GITURL = process.env.REACT_APP_TWREPO_URL
 
   const projects = [
