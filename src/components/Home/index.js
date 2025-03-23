@@ -3,13 +3,18 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import Logo from './Logo'
+import Cubes from './Cubes'
 import Loader from 'react-loaders'
 
 const Home = () => {
+  const JOB = process.env.REACT_APP_JOB_SD
+  const INA = process.env.REACT_APP_INA
+  const POSITIONS = process.env.REACT_APP_POSITIONS
+  const CONTACT = process.env.REACT_APP_CONTACT_ME
+  const PROJECTS = process.env.REACT_APP_PROJECTS_CAP
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = 'ina'.split('')
-  const jobArray = 'software developer'.split('')
+  const nameArray = INA.split('')
+  const jobArray = JOB.split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -40,12 +45,17 @@ const Home = () => {
               idx={27}
             />
           </h1>
-          <h2>Frontend Developer / Backend Developer / Creative Designer</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <h2>{POSITIONS}</h2>
+          <div className="btn-wrapper">
+            <Link to="/projects" className="flat-button">
+              {PROJECTS}
+            </Link>
+            <Link to="/contact" className="flat-button">
+              {CONTACT}
+            </Link>
+          </div>
         </div>
-        <Logo />
+        <Cubes />
       </div>
       <Loader type="pacman" />
     </>

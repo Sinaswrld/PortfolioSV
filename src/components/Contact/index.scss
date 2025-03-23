@@ -18,6 +18,10 @@
       position: relative;
       animation: fadeInUp 2s 2s;
       animation-fill-mode: forwards;
+
+      :focus-visible{
+        outline: none!important;
+      }
     }
 
     li.half {
@@ -45,6 +49,7 @@
 
   textarea {
     width: 100%;
+    resize: none;
     border: 0;
     background: #115173;
     height: 50px;
@@ -68,12 +73,11 @@
     text-transform: uppercase;
     float: right;
     text-align: center;
-    margin-right: 10px;
     transition: all 0.2s ease-in;
   }
 
   .flat-button:hover {
-    color: #fff;
+    color: #172229;
     background: #ffd700;
     cursor: pointer;
   }
@@ -132,10 +136,14 @@
     width: 100%;
     height: 400px;
   }
-  .contact-form ul li.half {
-    width: 100%;
-    margin-left: 0;
+  .contact-form ul li {
+    resize: none;
+    .half {
+      width: 100%;
+      margin-left: 0;
+    }
   }
+
   .info-map {
     display: none;
   }
